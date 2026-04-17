@@ -3,145 +3,164 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hỗ trợ người Việt tại Đức</title>
+<title>VietAssist Germany</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
 
 <style>
-:root {
-  --bg: #f4f6f5;
-  --glass: rgba(255,255,255,0.6);
-  --text: #1f1f1f;
-  --accent: #6f8f88;
-}
-
 body {
   margin:0;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(120deg, #e8efec, #f7f3ee);
-  color: var(--text);
-}
-
-/* GLASS CARD */
-.glass {
-  backdrop-filter: blur(14px);
-  background: var(--glass);
-  border-radius: 16px;
-  padding: 24px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  margin-bottom: 20px;
+  background:#f6f2eb;
+  color:#222;
 }
 
 /* HERO */
 .hero {
+  position:relative;
+  height:420px;
+  background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45)),
+              url('hero.png') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   text-align:center;
-  padding:80px 20px 40px;
+  color:white;
 }
 
 .hero h1 {
-  font-size:32px;
-  margin-bottom:16px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size:42px;
+  margin-bottom:12px;
 }
 
 .hero p {
   max-width:500px;
   margin:auto;
-  opacity:0.7;
+  opacity:0.9;
 }
 
-/* GRID */
+/* CONTAINER */
 .container {
-  max-width:800px;
+  max-width:900px;
   margin:auto;
-  padding:20px;
+  padding:40px 20px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding:24px;
+  border-radius:14px;
+  margin-bottom:20px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+}
+
+/* TITLES */
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom:12px;
+  font-size:32px;
 }
 
 /* LIST */
 .list div {
-  margin-bottom:10px;
+  margin-bottom:8px;
+}
+
+/* IMAGES IN CARDS */
+.card img {
+  width:100%;
+  border-radius:12px;
+  margin-bottom:16px;
+  display:block;
 }
 
 /* CTA */
 .cta {
   text-align:center;
-  margin-top:40px;
+  padding:40px 20px 60px;
 }
 
 .btn {
-  background: var(--accent);
+  background:#5f796f;
   color:white;
-  padding:14px 24px;
-  text-decoration:none;
+  padding:14px 22px;
   border-radius:8px;
+  text-decoration:none;
   display:inline-block;
   margin-top:10px;
 }
-
-/* NAV */
-.nav {
-  position:absolute;
-  top:20px;
-  right:20px;
-}
-.nav a {
-  text-decoration:none;
-  color:#333;
-  font-weight:600;
-}
 </style>
-
 </head>
 
 <body>
 
-<div class="nav">
-  <a href="/">EN</a>
-</div>
-
 <!-- HERO -->
 <div class="hero">
-  <h1>Giúp người Việt tại Đức</h1>
-  <p>Làm giấy tờ, đi cơ quan, hiểu rõ cần làm gì tiếp theo</p>
+  <div>
+    <h1>Giúp người Việt tại Đức</h1>
+    <p>Không hiểu giấy tờ? Không biết làm gì tiếp theo? Có người giúp bạn.</p>
+  </div>
 </div>
 
 <div class="container">
 
   <!-- INTRO -->
-  <div class="glass">
-    <p>Bạn không biết bắt đầu từ đâu?</p>
-    <p>Chúng tôi giúp bạn hiểu, chuẩn bị giấy tờ và làm việc với cơ quan (như Ausländeramt).</p>
+  <div class="card">
+    <p>
+      Nếu bạn nhận thư mà không hiểu, hoặc không biết phải chuẩn bị gì,
+      thì bạn không phải là người duy nhất.
+    </p>
+    <p>
+      Chúng tôi giúp bạn hiểu rõ và làm từng bước – đơn giản, không rối.
+    </p>
   </div>
 
   <!-- PROBLEMS -->
-  <div class="glass">
-    <h3>Vấn đề thường gặp</h3>
+  <div class="card">
+    <h2>Những việc hay gặp</h2>
+    <img src="visa.png" alt="Visa und Dokumente">
     <div class="list">
       <div>Không hiểu thư từ</div>
-      <div>Không biết phải làm gì trước</div>
+      <div>Không biết bắt đầu từ đâu</div>
       <div>Thiếu giấy tờ</div>
-      <div>Sợ làm sai</div>
+      <div>Sợ nói chuyện với cơ quan</div>
       <div>Quá nhiều việc cùng lúc</div>
     </div>
   </div>
 
   <!-- SOLUTION -->
-  <div class="glass">
-    <h3>Chúng tôi giúp</h3>
+  <div class="card">
+    <h2>Chúng tôi giúp gì</h2>
+    <img src="office.png" alt="Behörden und Unterlagen">
     <div class="list">
-      <div>Giải thích rõ từng bước</div>
-      <div>Chuẩn bị giấy tờ</div>
-      <div>Sắp xếp việc cần làm</div>
-      <div>Đi cơ quan khi cần</div>
+      <div>Giải thích dễ hiểu</div>
+      <div>Kiểm tra giấy tờ</div>
+      <div>Chỉ bạn từng bước cần làm</div>
+      <div>Chuẩn bị trước khi đi Ausländeramt</div>
     </div>
   </div>
 
-  <!-- CTA -->
-  <div class="cta glass">
-    <h3>Liên hệ</h3>
-    <p>Trao đổi ban đầu, không phức tạp</p>
-    <a class="btn" href="mailto:hello@nia-business.com">Nhắn tin ngay</a>
+  <!-- PROCESS -->
+  <div class="card">
+    <h2>Cách làm việc</h2>
+    <div class="list">
+      <div>1. Bạn nói tình huống của bạn</div>
+      <div>2. Xem giấy tờ</div>
+      <div>3. Biết rõ bước tiếp theo</div>
+    </div>
   </div>
 
+</div>
+
+<!-- CTA -->
+<div class="cta">
+  <h2>Liên hệ</h2>
+  <p>Nhắn tin, nói chuyện đơn giản trước</p>
+  <a class="btn" href="mailto:hello@nia-business.com">Nhắn ngay</a>
 </div>
 
 </body>
